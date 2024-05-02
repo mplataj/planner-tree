@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Planner Tree</title>
+<meta name="author" content="Planner Tree">
+<meta name="description" content="Planner Tree company website">
+<meta name="keywords" content="planners, journals, notebooks, schedules, calendars, productivity, goals, planning, tracking, trackers, academic, university, students, professionals, organization">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+	
+<body>
+	
+	<header id="index-header">
+		<div id="pt-header-div">
+			<a href="index.html"><img src="pt-images/pt-logos/PT-logo-text-Y-top.png" alt="Planner Tree Logo" /></a>
+			</div>
+		</header>
+	
+<div style="position:relative;" class="div-colorbar-gallery">
+	
+  <div class="max-width-container">
+	<div class="gallery-column-l">
+
+		<div class="gallery-container-div">
+		  <div class="mySlides">
+			<img src="pt-images/p-photos/planner-stack.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<img src="pt-images/p-photos/planner-name.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<img src="pt-images/p-photos/planner-month.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<img src="pt-images/p-photos/planner-week.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<img src="pt-images/p-photos/planner-daily.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<img src="pt-images/p-photos/planner-habit.jpg" style="width:100%">
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
+
+		  <div class="gallery-caption-container">
+			<p id="caption"></p>
+		  </div>
+
+		  <div class="demo-row">
+			<div class="demo-column">
+			  <img class="demo cursor" src="pt-images/p-photos/planner-stack.jpg" style="width:100%" onclick="currentSlide(1)" alt="Time to Rise Planner">
+			</div>
+			<div class="demo-column">
+			  <img class="demo cursor" src="pt-images/p-photos/planner-name.jpg" style="width:100%" onclick="currentSlide(2)" alt="Vision Board">
+			</div>
+			<div class="demo-column">
+			  <img class="demo cursor" src="pt-images/p-photos/planner-month.jpg" style="width:100%" onclick="currentSlide(3)" alt="Monthly Layout">
+			</div>
+			<div class="demo-column">
+			  <img class="demo cursor" src="pt-images/p-photos/planner-week.jpg" style="width:100%" onclick="currentSlide(4)" alt="Weekly Layout">
+			</div>
+			<div class="demo-column">
+			  <img class="demo cursor" src="pt-images/p-photos/planner-daily.jpg" style="width:100%" onclick="currentSlide(5)" alt="Daily Layout">
+			</div>    
+			<div class="demo-column">
+			  <img class="demo cursor" src="pt-images/p-photos/planner-habit.jpg" style="width:100%" onclick="currentSlide(6)" alt="Habit Trackers">
+			</div>
+		  </div>
+		</div><!--close gallery-container-div-->
+
+		<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("demo");
+		  let captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+		</div><!--close gallery-column-l-->
+	  
+
+		<div class="gallery-info-column-div">
+
+			<h3>Time to Rise Planner</h3>
+
+				<p></p>
+				<ul>
+					<li>Hardcover</li>
+					<li>Monthly, Weekly, &amp; Daily layouts</li>
+					<li>Habit trackers</li>
+					<li>Vision board, goal mapping &amp; more...</li>
+					<li>Premium quality 135 GSM paper</li>
+					<li>Sizes: A5 or B6</li>
+					<li>Assortment of colors</li>
+					</ul>
+
+				<div class="gallery-amazon-div">
+					</div>
+			 </div>
+	</div><!--close max-width-container -->
+	</div><!--close color bar-->
+	
+	<div class="div-colorbar-amazon" style="border: none;">
+  <div class="max-width-container">
+	  <div id="amazon-left-div">
+		  <div class="amazon-content-div">
+  			<p style="color:white;">AVAILABLE EXCLUSIVELY AT</p>
+			<img src="pt-images/smedia-logos/amazon-logo-white_.png" alt="amazon logo">
+			</div>
+			</div>
+	  
+	  <div id="amazon-right-div">
+		  <div class="amazon-content-div">
+		  <a href="https://www.amazon.com" target="_blank">SHOP NOW</a>
+			  </div>
+		   </div>
+  </div>
+</div>
+	
+	
+	<div class="div-colorbar-footer-info">
+	<div class="max-width-container">
+		
+			<div class="footer-links">
+				<a  href="faq.html#faq-about">About Us</a>
+				<a href="faq.html#faq-affiliates">Affiliates</a>
+				<a href="faq.html#faq-careers">Careers</a>
+				</div>
+
+			<div class="footer-links">
+				<a href="faq.html/#faq-contact">Contact</a>
+				<a href="faq.html#faq-shipping">Shipping</a>
+				<a href="faq.html#faq-returns">Returns</a>
+				</div>
+
+			<div class="footer-links">	
+				<a href="search.html">Site Search</a>
+				<a href="faq.html#faq-privacy">Privacy Policy</a>
+				<a href="faq.html#faq-terms">Terms of Use</a>
+				</div>
+			</div><!--close-max-width-container-->
+		</div><!--close-color-bar-->
+	
+	<footer>
+	
+		<img src="pt-images/pt-logos/PT-logo-roots-900x300-clipped.png" alt="Planner Tree Roots Logo">
+  		<p> &copy; 2024 Planner Tree</p>
+			
+	</footer>
+	
+</body>
+</html>
+

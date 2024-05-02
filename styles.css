@@ -1,0 +1,583 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	color: black;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+body a:hover {
+	color:goldenrod;
+}
+	
+/**** PT HEADER ****/
+
+#pt-header-div {
+	width: 100%;
+	text-align: center;
+	padding: 0px 20px;
+	margin: 0px auto;
+	display: inline-block;
+}
+
+#pt-header-div img {
+	padding-top: 0px;
+	margin: 0px auto;
+	object-fit: contain;
+	max-width: 350px;
+	height: auto;
+}
+
+#pt-header-div a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	margin: 0px auto;
+	font-size: 40px;
+}
+
+
+/**** NAVIGATION ****/
+
+nav {
+	background-color: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 25px;
+	letter-spacing: 8px;
+	font-weight: bolder;
+    text-transform:none;
+	text-align: center;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px auto;
+    padding: 0px 20px;
+	width: 100%;
+}
+
+nav h2 {
+	font-weight: bold;
+	font-size: 30px;
+  	letter-spacing: 8px;
+}
+
+nav a {
+	background-color:rgba(254,254,253,0.55);
+	color: black;
+	text-decoration: none;
+	max-width: 200px;
+	min-width: 200px;
+	height: auto;
+	width: auto;
+	flex: 1 1 auto;
+	margin: 0px 10%;
+	padding: 3%;
+	border: none;
+	font-size: 25px;
+  	letter-spacing: 8px;
+	border-radius: 3%;
+}
+
+nav a:hover {
+	color:black;
+	background-color:rgba(254,254,253,1.0);
+}
+
+/**** MAIN CONTENT Flex Container ****/
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px auto;
+	padding: 0px;
+	min-width: 500px;
+	max-width: 100%;
+}
+
+main h1 {
+	text-align: center;
+}
+
+.max-width-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px auto;
+	padding: 0px;
+	max-width: 700px;
+	min-width: 350px;
+	background-color: inherit;
+	height: 100%;
+}
+
+
+/**** INDEX PAGE PARALLAX SCROLLING ****/
+
+header#index-header {
+	border-bottom: 4px solid black;
+	padding-bottom: 4px;
+}
+
+header#index-header img{
+	max-width: 350px;
+	margin-bottom: 3%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(255,255,255,0.65);
+}
+
+.bgimg-1 {
+    background-image: url("pt-images/p-photos/planner-stack.jpg");
+	height: 400px;
+}
+
+.bgimg-1 img {
+	max-width: 600px;
+	width: 60%;
+	padding: 0px;
+	margin: 0px;
+}
+.bgimg-2 {
+  background-image: url("pt-images/journals-rainbow.png");
+  min-height: 300px;
+	max-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("pt-images/planners-thick.png");
+  min-height: 300px;
+	max-height: 400px;
+}
+
+.bgimg-content-div {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.bgimg-content-div span.border {
+  background-color:inherit;
+  color: black;
+  font-weight: bolder;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+#logo-header-index-div {
+	top: 5%;
+}
+
+/***** INDEX: Amazon Shop Now ***/
+
+.div-colorbar-amazon {
+	border-top: 0px solid goldenrod;
+	border-bottom: 0px solid goldenrod;
+	background-color:black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px;
+	padding: 10px;
+	width: 100%;
+	color: white;
+	height: 200px;
+}
+
+div#amazon-left-div {
+	background-color: inherit;
+	width: 40%;
+	min-width: 200px;
+	max-width: 350px;
+	margin: 0 auto;
+	padding-top: 0;
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+}
+
+div.amazon-content-div {
+	margin: 30px 0px 0px 30px;
+	background-color: inherit;
+	height: auto;
+	padding:0;
+	text-align: center;
+}
+
+.amazon-content-div p {
+	margin: 3%;
+	text-align: left;
+}
+
+div#amazon-right-div {
+	background-color: inherit;
+	width: 40%;
+	min-width: 150px;
+	max-width: 300px;
+	margin: 0px auto;
+	display: inline-block;
+	height: 100%;
+}
+
+div.amazon-content-div a {
+	margin: 22% auto;
+	background-color: white;
+	padding: 10px 15px;
+	display: block;
+	text-align: center;
+	width: 150px;
+	
+	
+	text-decoration: none;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+div.amazon-content-div a:hover {
+	background-color: goldenrod;
+}
+
+
+/***** INDEX: Social Media ***/
+
+div#smedia-icons-index-div {
+	margin: 20px auto 0px auto;
+}
+
+div#smedia-icons-index-div img {
+	width: 75px;
+	margin: 0px 10px;
+	border-radius: 50px;
+	background-color: rgba(0,0,0,0.9);
+	border: medium solid black;
+	
+}
+
+div#smedia-icons-index-div img:hover {
+	background-color: rgba(0,0,0,0.9);
+	border: medium solid goldenrod;
+}
+
+
+/**** PRODUCT GALLERY PAGES *************/
+	
+.div-colorbar-gallery {
+	background-color:white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px;
+	padding: 5% 0px;
+	width: 100%;
+	color: black;
+}
+
+img.div-colorbar-gallery {
+  vertical-align: middle;
+}
+	
+.gallery-column-l {
+	background-color: transparent;
+	width: 60%;
+	min-width: 100px;
+	max-width: 400px;
+	margin: 0px;
+	
+	}
+	
+.gallery-info-column-div {
+	background-color: transparent;
+	width: 30%;
+	min-width: 100px;
+	max-width: 200px;
+	margin: 0px;
+	padding: 5%;
+	}
+
+.gallery-info-column-div h3{
+	color: inherit;
+	padding: 0;
+	margin-bottom: 5%;
+}
+
+.gallery-info-column-div ul{
+	color: inherit;
+	padding: 5%;
+	margin-top: 15%;
+}
+
+.gallery-info-column-div li{
+	color: inherit;
+	padding: 0;
+	margin: 15% 0px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container-div {
+	position: relative;
+	max-width: 400px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.gallery-caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 3px auto;
+  color: white;
+}
+
+.gallery-caption-container p{
+  text-transform: uppercase;
+}
+
+.demo-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.demo-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+img.demo {
+	opacity: 1;
+	border: medium solid black;
+	object-fit: cover;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/**** FAQ PAGE *********************/
+
+header#faq-header img{
+	max-width: 350px;
+	margin-bottom: 3%;
+}
+
+main h1 {
+	background-color: goldenrod;
+	color: black;
+	font-size: 24px;
+	width: 100%;
+	margin: auto;
+	padding: 1%;
+	border-radius: 10% 10% 0 0;
+	
+}
+
+button.faq-accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.faq-accordion.active, button.faq-accordion:hover {
+	border-bottom: thin solid goldenrod;
+	color: goldenrod;
+}
+
+/** adding plus sign char **/
+button.faq-accordion:after {
+    content: '\002B'; /** plus sign char **/
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/** changing to minus sign char when active **/
+button.faq-accordion.active:after {
+    content: "\2212"; /** minus sign char **/
+	color: goldenrod;
+}
+
+div.faq-infobox {
+    padding: 0 4%;
+    background-color: white;
+	border-right: medium solid black;
+	border-left: medium solid black;
+	border-bottom: medium solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div.faq-infobox p {
+	color: black;
+}
+
+.faq-infobox a {
+	color: black;
+}
+
+div.faq-infobox a:hover {
+	color: darkgoldenrod;
+}
+
+/**** FOOTER links section ****/
+
+.div-colorbar-footer-info {
+	border-top: none;
+	background-color:black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px;
+	padding: 20px;
+	padding-bottom: 40px;
+	width: 100%;
+	color: white;
+}
+
+div.footer-links {
+	width: 30%;
+	min-width: 100px;
+	max-width: 150px;
+	margin: 0px auto;
+	display: inline-block;
+	padding-left: 33px;
+}
+
+div.footer-links a {
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	display: block;
+	text-align: left;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+}
+
+div.footer-links a:hover {
+	color: goldenrod;
+}
+
+/*** FOOTER *************/
+
+footer {
+    margin: 0px auto;
+	padding: 0px;
+	height: auto;
+	width: 100%;
+	font-family: inherit;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: inherit;
+	
+}
+
+footer img {
+	padding: 0px;
+	max-width: 550px;
+	min-width: 200px;
+	margin: 0px auto;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+footer p {
+    text-transform: uppercase;
+    text-align: center;
+	color: inherit;
+	padding: 10px;
+	margin: 10px auto;
+	margin-top: 30px;
+	background-color: inherit;
+}
+
+/******UNUSED******/
+

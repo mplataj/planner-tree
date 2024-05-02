@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Planner Tree</title>
+<meta name="author" content="Planner Tree">
+<meta name="description" content="Planner Tree company website">
+<meta name="keywords" content="planners, journals, notebooks, schedules, calendars, productivity, goals, planning, tracking, trackers, academic, university, students, professionals, organization">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+
+
+	<header id="faq-header">
+		<div id="pt-header-div">
+			<a href="index.html">
+				<img src="pt-images/pt-logos/PT-logo-text-Y-top.png" alt="Planner Tree Logo"/>
+			</a>
+		</div>
+		<!--<nav>
+			<a href="../index.html">Shop</a>
+			<a href="../faq.html">FAQ</a>
+		</nav>-->
+	</header>
+	<main class="max-width-container">
+		<h1 id="faq">FAQ</h1>
+
+	  <button class="faq-accordion" id="faq-about">About Us</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p>Planner Tree has a mission empower people to grow their their goals from roots to fruit with our innovative specialty planners.
+			<br>
+			<br>Planner Tree was founded in the Summer of 2024, and is a rapidly growing creative start-up. Join our online community to stay up to date with all the latest developments.</p>
+			<br>
+			</div>
+
+		<button class="faq-accordion" id="faq-affiliates">Affiliates</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p>Do you love Planner Tree products and want to make extra money sharing them with your followers? 
+			<br>
+			<br>Planner Tree is always looking to reward enthusiastic promoters!
+			<br>
+			<br>If you are interested in becoming a paid affiliate, email: <a href="mailto:affiliates@plannertree.com">Affiliates@PlannerTree.com</a></p>
+			<br>
+		</div>
+
+		<button class="faq-accordion" id="faq-careers">Careers</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p>Are you looking for a rewarding career with a rapidly growing creative start-up?
+			<br>
+			<br>Send your resume and letter of interest to: <a href="mailto:Careers@PlannerTree.com">Careers@PlannerTree.com</a></p>
+			<br>
+		</div>
+
+		<button class="faq-accordion" id="faq-contact">Contact Us</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p>We love to hear from our customers!
+			<br>
+			<br>If you have additional questions or feedback, email: <a href="mailto:Support@PlannerTree.com">Support@PlannerTree.com</a></p>
+			<br>
+		</div>
+
+		<button class="faq-accordion" id="faq-privacy">Privacy Policy</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p>Planner Tree does not sell or share any customer data.
+			<br>
+			<br>Planner Tree products are sold exclusively on Amamzon.com. Your interactions with the Amazon marketplace are subject to their Privacy Policy and Terms of Use.</p>
+			<br>
+		</div>
+
+		<button class="faq-accordion" id="faq-returns">Return Policy</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p>Planner Tree has a 100% Satisfaction Money Back Guarantee if you return your unused planner within 30 days.  
+			<br>
+			<br>Our products are sold exclusively on Amazon.com.  If you are not satisfied with your purchase for any reason, please initiate the return process through the Amazon Marketplace.  
+			<br>
+			<br>If you are not satisfied with your Amazon Marketplace experience or have any other feedback or questions, please email: <a href="mailto:Support@PlannerTree.com">Support@PlannerTree.com</a></p>
+			<br>
+		</div>
+
+		<button class="faq-accordion" id="faq-shipping">Shipping</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p>Planner Tree products are sold exclusively on Amazon.com. <br>Shipping options and speeds will vary according to the terms of the Amazon Marketplace.  <br>Free two-day shipping is available for most Amazon Prime members.</p>
+			<br>
+		</div>
+
+		<button class="faq-accordion" id="faq-terms">Terms of Use</button>
+		<div class="faq-infobox">
+			<br>
+		  	<p id="terms">Lorem consequat.</p>
+			<br>
+		</div>
+
+		<!-- JS accordion infobox -->
+		<script>
+		var acc = document.getElementsByClassName("faq-accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].onclick = function() {
+			  /* Toggle between adding and removing the "active" class, to highlight the button that controls the panel */
+			  this.classList.toggle("active");
+
+			/** Toggle between hiding and showing the active panel NOTE: multiple ways to do this**/
+			var accInfobox = this.nextElementSibling;
+			if (accInfobox.style.maxHeight) {
+				accInfobox.style.maxHeight = null;
+			} else {
+			  accInfobox.style.maxHeight = accInfobox.scrollHeight + "px";
+			} 
+		  }
+		}
+		</script>
+
+</main> <!-- close main flex container-->
+	
+	<footer>
+		<img src="pt-images/pt-logos/PT-logo-roots-900x300-clipped.png" alt="Planner Tree Roots Logo">
+  		<p> &copy; 2024 Planner Tree</p>
+	</footer>	
+
+</body>
+</html>
