@@ -7,7 +7,6 @@
 	padding: 0px;
 	width: 100%;
 	box-sizing: border-box;
-	
 }
 
 body {
@@ -49,7 +48,7 @@ body a:hover {
 }
 
 
-/**** NAVIGATION ****/
+/**** NAVIGATION (INDEX ONLY)****/
 
 nav {
 	background-color: none;
@@ -65,7 +64,7 @@ nav {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0px auto;
-    padding: 0px 20px;
+    padding: 0px;
 	width: 100%;
 }
 
@@ -73,6 +72,7 @@ nav h2 {
 	font-weight: bold;
 	font-size: 30px;
   	letter-spacing: 8px;
+	margin-bottom: 7%;
 }
 
 nav a {
@@ -85,11 +85,12 @@ nav a {
 	width: auto;
 	flex: 1 1 auto;
 	margin: 0px 10%;
-	padding: 3%;
-	border: none;
-	font-size: 25px;
+	padding: 2%;
+	border: medium solid black;
+	font-size: 24px;
   	letter-spacing: 8px;
 	border-radius: 3%;
+	line-height: 120%;
 }
 
 nav a:hover {
@@ -97,7 +98,7 @@ nav a:hover {
 	background-color:rgba(254,254,253,1.0);
 }
 
-/**** MAIN CONTENT Flex Container ****/
+/**** MAIN CONTENT Flex Container (FAQ ONLY) ****/
 
 main {
 	display: flex;
@@ -114,6 +115,9 @@ main h1 {
 	text-align: center;
 }
 
+
+/**********************************/
+
 .max-width-container {
 	display: flex;
 	flex-direction: row;
@@ -128,7 +132,7 @@ main h1 {
 }
 
 
-/**** INDEX PAGE PARALLAX SCROLLING ****/
+/**** INDEX PAGE PARALLAX *******/
 
 header#index-header {
 	border-bottom: 4px solid black;
@@ -161,45 +165,46 @@ header#index-header img{
 	margin: 0px;
 }
 .bgimg-2 {
-  background-image: url("pt-images/journals-rainbow.png");
-  min-height: 300px;
+  	background-image: url("pt-images/journals-rainbow.png");
+  	min-height: 300px;
 	max-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("pt-images/planners-thick.png");
-  min-height: 300px;
+  	background-image: url("pt-images/planners-thick.png");
+  	min-height: 300px;
 	max-height: 400px;
 }
 
 .bgimg-content-div {
-  position: absolute;
-  left: 0;
-  top: 35%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+  	position: absolute;
+	left: 0;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	color: #000;
 }
 
 .bgimg-content-div span.border {
-  background-color:inherit;
-  color: black;
-  font-weight: bolder;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 8px;
+	background-color:inherit;
+	color: black;
+	font-weight: bolder;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 8px;
 }
 
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
 }
 
 #logo-header-index-div {
 	top: 5%;
 }
+
 
 /***** INDEX: Amazon Shop Now ***/
 
@@ -310,7 +315,7 @@ div#smedia-icons-index-div img:hover {
 }
 
 img.div-colorbar-gallery {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 	
 .gallery-column-l {
@@ -323,102 +328,103 @@ img.div-colorbar-gallery {
 	}
 	
 .gallery-info-column-div {
-	background-color: transparent;
-	width: 30%;
+	background-color: none;
+	width: 35%;
 	min-width: 100px;
-	max-width: 200px;
+	max-width: 250px;
 	margin: 0px;
-	padding: 5%;
+	padding: 4% 4% 3% 5%;
 	}
 
 .gallery-info-column-div h3{
 	color: inherit;
 	padding: 0;
-	margin-bottom: 5%;
+	margin: 0px;
+	font-weight: normal;
 }
 
 .gallery-info-column-div ul{
 	color: inherit;
 	padding: 5%;
-	margin-top: 15%;
+	margin-top: 0%;
 }
 
 .gallery-info-column-div li{
 	color: inherit;
 	padding: 0;
-	margin: 15% 0px;
+	margin: 12% 0px;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
+/* positions the image container (needed to position the left and right arrows) */
 .gallery-container-div {
 	position: relative;
 	max-width: 400px;
 }
 
-/* Hide the images by default */
+/* hides the images by default */
 .mySlides {
-  display: none;
+	display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+/* adds pointer when hovering over thumbnails */
 .cursor {
-  cursor: pointer;
+	cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* positions the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+	right: 0;
+	border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* on hover, adds dark background */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Container for image text */
+/* container for image text */
 .gallery-caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 3px auto;
-  color: white;
+	text-align: center;
+	background-color: black;
+	padding: 3px auto;
+	color: white;
 }
 
 .gallery-caption-container p{
-  text-transform: uppercase;
+  	text-transform: uppercase;
+	font-size: 12px;
+	padding: 2%;
 }
 
 .demo-row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
-/* Six columns side by side */
+/* demo imgs six columns */
 .demo-column {
-  float: left;
-  width: 16.66%;
-}
+	float: left;
+	width: 16.66%;
+	}
 
-/* Add a transparency effect for thumnbail images */
 img.demo {
 	opacity: 1;
 	border: medium solid black;
@@ -427,7 +433,7 @@ img.demo {
 
 .active,
 .demo:hover {
-  opacity: 1;
+  	opacity: 1;
 }
 
 
@@ -495,6 +501,7 @@ div.faq-infobox {
 
 div.faq-infobox p {
 	color: black;
+	background-color: none;
 }
 
 .faq-infobox a {
@@ -503,6 +510,27 @@ div.faq-infobox p {
 
 div.faq-infobox a:hover {
 	color: darkgoldenrod;
+}
+
+div#smedia-icons-faq-div {
+	margin: 3% auto 4% auto;
+	padding: 0;
+	background-color: none;
+	width: 30%;
+}
+
+div#smedia-icons-faq-div img {
+	width: 40px;
+	margin: 0px 5px;
+	padding: 0;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.9);
+	border: 2px solid black;
+}
+
+div#smedia-icons-faq-div img:hover {
+	background-color: rgba(0,0,0,0.9);
+	border: medium solid goldenrod;
 }
 
 /**** FOOTER links section ****/
@@ -578,6 +606,4 @@ footer p {
 	margin-top: 30px;
 	background-color: inherit;
 }
-
-/******UNUSED******/
 
